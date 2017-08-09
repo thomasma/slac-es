@@ -1,0 +1,22 @@
+{
+  "query": {
+    "bool": {
+      "must": [
+        {
+          "match": {
+            "address": "street"
+          }
+        }
+      ],
+      "filter": [
+        {
+          "range": {
+            "balance": {
+              "gte": "40000"
+            }
+          }
+        }
+      ]
+    }
+  }
+}

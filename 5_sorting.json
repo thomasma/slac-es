@@ -1,0 +1,13 @@
+{
+  "query": {
+    "match": {
+      "address": "Quentin street"
+    }
+  },
+  "sort": [
+    {
+      "balance": "asc"
+    },
+    "_score"
+  ]
+}

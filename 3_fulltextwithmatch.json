@@ -1,0 +1,22 @@
+
+// full text search using match 
+{
+    "query": {
+        "match" : {
+            "address" : "Quentin street"
+        }
+    }
+}
+
+
+// full text search using match and the AND operator
+{
+    "query": {
+        "match" : {
+            "address" : {
+                "query" : "quentin street",
+                "operator" : "and"
+            }
+        }
+    }
+}
